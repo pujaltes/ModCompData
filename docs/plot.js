@@ -50,7 +50,7 @@ svg3 = d3.select("svg#mainsvg")
       .attr("width", width)
 
 d3.select("svg#mainsvg").append("image")
-                     .attr("transform", "translate(1070, 50)")
+                     .attr("transform", "translate(" + ( 3.5 * width + 2 * gap) + ")")
                      .attr("xlink:href",'https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg')
                      .attr("width", 100)
                      .attr("height", 100)
