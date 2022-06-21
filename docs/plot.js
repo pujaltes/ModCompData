@@ -42,13 +42,18 @@ svg2 = d3.select("svg#mainsvg")
       .attr("width", width * 2.5)
 
 svg3 = d3.select("svg#mainsvg")
-    .append("g") // group to move svg sideways
+      .append("g") // group to move svg sideways
       .attr("transform", "translate(0," + -50 + ")")
       .append("svg")
       .attr("id", "svg3")
       .attr("height", height)
       .attr("width", width)
 
+d3.select("svg#mainsvg").append("image")
+    .attr("transform", 'translate(3.5 * width + 2 * gap, height / 3)')
+    .attr("xlink:href",'https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg')
+    .attr("width", 30)
+    .attr("height", 100)
 
 // add a box around each SVG
 svg1.append("rect")
