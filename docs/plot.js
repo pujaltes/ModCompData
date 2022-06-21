@@ -51,7 +51,7 @@ svg3 = d3.select("svg#mainsvg")
 
 svg4 = d3.select("svg#mainsvg")
                      .append("g")
-                     .attr("transform", "translate(" + ( 3.5 * width + 2 * gap) + ")")
+                     .attr("transform", "translate(" + (2 * (width+gap)) + ")")
                      .append("svg")
                      .attr("id", "svg4")
                      .attr("height", height)
