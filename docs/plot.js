@@ -49,18 +49,11 @@ svg3 = d3.select("svg#mainsvg")
       .attr("height", height)
       .attr("width", width)
 
-svg4 = d3.select("svg#mainsvg")
-                     .append("g")
-                     .attr("transform", "translate(" + (3.5 * (width+gap)) + ")")
-                     .append("svg")
-                     .attr("id", "svg4")
-                     .attr("height", height)
-                     .attr("width", 100)
-
-svg4.append("image")
-    .attr("src","https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg")
-    .attr("width", 50)
-    .attr("height", 300)
+svg4 = d3.select("svg#mainsvg").append("image")
+                     .attr("transform", "translate(" + ( 3.5 * width + 2 * gap) + ")")
+                     .attr("xlink:href",'https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg')
+                     .attr("width", 30)
+                     .attr("height", 100)
 
 // add a box around each SVG
 svg1.append("rect")
