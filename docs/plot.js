@@ -58,9 +58,9 @@ svg4 = d3.select("svg#mainsvg")
                      .attr("width", 100)
 
 svg4.append("image")
-    .attr("src","http://upload.wikimedia.org/wikipedia/commons/b/b0/NewTux.svg")
-    .attr("width", 300)
-    .attr("height", 100)
+    .attr("src","https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg")
+    .attr("width", 50)
+    .attr("height", 300)
 
 // add a box around each SVG
 svg1.append("rect")
