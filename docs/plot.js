@@ -24,7 +24,7 @@ svg = d3.select("#test")
     .append("svg")
     .attr("id", "mainsvg")
     .attr("height", height)
-    .attr("width", width*3.5 + gap)
+    .attr("width", width*4.5 + gap)
 
 // first svg
 svg1 = d3.select("svg#mainsvg")
@@ -50,9 +50,9 @@ svg3 = d3.select("svg#mainsvg")
       .attr("width", width)
 
 d3.select("svg#mainsvg").append("image")
-                     .attr("transform", "translate(" + ( 3.5 * width + 2 * gap) + ")")
+                     .attr("transform", "translate(1070, 50)")
                      .attr("xlink:href",'https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg')
-                     .attr("width", 30)
+                     .attr("width", 100)
                      .attr("height", 100)
 
 
