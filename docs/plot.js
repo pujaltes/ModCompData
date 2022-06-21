@@ -49,10 +49,17 @@ svg3 = d3.select("svg#mainsvg")
       .attr("height", height)
       .attr("width", width)
 
-d3.select("svg#mainsvg").append("image")
-    .attr("transform", 'translate(3.5 * width + 2 * gap, height / 3)')
-    .attr("xlink:href",'https://raw.githubusercontent.com/pujaltes/ModCompData/main/docs/drawing.svg')
-    .attr("width", 30)
+svg4 = d3.select("svg#mainsvg")
+                     .append("g")
+                     .attr("transform", "translate(" + ( 3.5 * width + 2 * gap) + ")")
+                     .append("svg")
+                     .attr("id", "svg4")
+                     .attr("height", height)
+                     .attr("width", 100)
+
+svg4.append("image")
+    .attr("src","http://upload.wikimedia.org/wikipedia/commons/b/b0/NewTux.svg")
+    .attr("width", 300)
     .attr("height", 100)
 
 // add a box around each SVG
